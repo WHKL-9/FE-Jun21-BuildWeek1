@@ -1,29 +1,271 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
+    <section id="hero-section">
+     <strong><h2>Recently played</h2></strong> 
+      <a class="see-all"> See all </a>
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="card-deck" id="album">
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/605d81b6de3b6c17b4f3041576e42b5b.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text border-dark" ><strong> top jazz</strong> <br>
+                
+                  <small>kahckakchkcffggg kjdxbnckj dbckas</small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/8ab87bd6999d659eb282fbed00895d86.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong> top rock</strong> <br>
+                
+                  <small class="text-muted">dshckjkjcndsc dsghjcvjcvj</small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/j.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>pop</strong><br>
+                
+                  <small class="text-muted">diaschkckcn sdjbcjhbckjs</small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/l.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>jazz</strong><br>
+                
+                  <small class="text-muted">dsakchkjcnb dskjcjkc</small>
+                </p>
+                
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/8ab87bd6999d659eb282fbed00895d86.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong> rock and jazz</strong> <br>
+                
+                  <small class="text-muted">uiadshkjbckjc cdhcsjdbc  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/8ab87bd6999d659eb282fbed00895d86.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong> western</strong><br>
+               
+                  <small class="text-muted">dajkcnkjcjk cjhbcjhk </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/j.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+               
+                <p class="card-text"><strong>instrumental</strong><br>
+                
+                  <small class="text-muted">dscbcb  hcakb kc  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/k.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>top pop</strong><br>
+                
+                  <small class="text-muted">kdcnkjdc hbcjhsbc xk  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="hero-section">
+      <strong><h2>Shows to try</h2></strong>
+      <a class="see-all"> See all </a>
+      <p><small class="text-muted">Podcasts we think you'll get hooked on.</small></p>
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="card-deck" id="album">
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/8ab87bd6999d659eb282fbed00895d86.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>radio</strong><br>
+                  <small class="text-muted">dscknck jsdnxkjnc  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/j.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+               
+                <p class="card-text"><strong>Podcasts</strong><br>
+                  <small class="text-muted">xcibkcn ckdnckc  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/8ab87bd6999d659eb282fbed00895d86.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>daily cagito</strong><br>
+                  <small class="text-muted">scxhjbck csdnxk ccvxh  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/k.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>midian</strong></p>
+                <p class="card-text">
+                  <small class="text-muted">cuzbcx  kcxbj cjhdcjx dmac </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/l.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>liked songs</strong><br>
+                  <small class="text-muted">sdxjasbh xckj xhbakj xc </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/8ab87bd6999d659eb282fbed00895d86.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>Le bask</strong><br>
+                  <small class="text-muted">cxhsdb xckj xbsabxc  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark">
+              <img
+                src="images/8ab87bd6999d659eb282fbed00895d86.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>locando</strong><br>
+                  <small class="text-muted">xizubkjcx xkdnbksjb cx </small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark border-dark">
+              <img
+                src="images/605d81b6de3b6c17b4f3041576e42b5b.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                
+                <p class="card-text"><strong>duets</strong><br>
+                  <small class="text-muted">ckdsabcxkjb cxkxhbjhsk x </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
   </body>
 </html>
