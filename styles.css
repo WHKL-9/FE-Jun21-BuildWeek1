@@ -78,14 +78,15 @@ body {
     color: rgba(255, 255, 255, 0.842) !important;
 }
   
-  .see-all {
+   /* .see-all {
     display: inline;
     text-decoration: none;
     color: rgb(206, 203, 203);
     float: right;
     top: 0;
     right: 2px;
-  }
+  } */
+
   #hero-section > h1 {
     display: inline;
     position: relative;
@@ -94,6 +95,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
   } 
+
   #hero-section > .container-fluid {
     padding-top: 20px;
   }
@@ -161,3 +163,20 @@ div h5 {
 /* #spaceBetween {
     justify-content: space-between;
 } */
+
+.seeAll1 {
+    position: absolute;
+    right: 108px;
+    top: 293px;
+    color: white;
+    font-size: 13px;
+}
+
+.seeAll2 {
+    position: absolute;
+    right: 108px;
+    top: 590px;
+    color: white;
+    font-size: 13px;
+}
+
