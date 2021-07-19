@@ -72,7 +72,7 @@ li a{
 
 body {
     background: rgb(102,16,5);
-    background: linear-gradient(180deg, rgba(102,16,5,1) 0%, rgba(0,0,15,1) 53%);
+    background: linear-gradient(180deg, rgba(102,16,5,1) 0%, rgb(0, 0, 0) 35%);
     background-repeat: no-repeat;
     font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.842) !important;
@@ -89,43 +89,40 @@ body {
   #hero-section > h1 {
     display: inline;
     position: relative;
-    font-size: 20px;
   }
-  #hero-section {
-    padding: 100px;
+    #hero-section {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+  } 
   #hero-section > .container-fluid {
     padding-top: 20px;
   }
   #album > .card {
-    min-height: 50px;
-    min-width: 100px;
+    max-height: 200px;
+    max-width: 105px;
     border: black;
   }
-  #album > .card > img {
-    border-radius: 4%;
-  }
-  .card-body {
-    height: 120px;
-    background-color: rgb(51, 46, 46) !important;
-  }
 
+  #album .card img {
+    border-radius: 15%;
+} 
+
+#hero-section img {
+    width: 108px;
+}
 
 
 h4 {
     color: white;
 }
 
-img {
+#imageSize {
     width: 50px !important;
     height: 50px !important;
 }
 
 #fontSize {
     font-size: 11px !important;
-    text-align: center;
 }
 
 div h5 {
@@ -138,15 +135,17 @@ div h5 {
 }
 
 #arrow {
-    color: white;
+    color: rgb(255, 255, 255);
+    border-color: black;
 }
 
 .dropdown {
-    padding-left: 680px;;
+    padding-left: 890px;;
 }
 
 .btn {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: black;
 }
 
 #profilePic {
@@ -154,3 +153,11 @@ div h5 {
     height: 30px !important;
     border-radius: 50%;
 }
+
+#notRounded {
+    border-radius: 0% !important;
+}
+
+/* #spaceBetween {
+    justify-content: space-between;
+} */
