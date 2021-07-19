@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
      <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -147,50 +147,46 @@
           
             <div class="col-10">
               
-  <div class="pr-3 mt-3 container">
+                <div class="pr-3 mt-3 container-fluid">
+                    <div class="row">
+                        <button class="ml-3 btn btn-dark badge-pill" id="arrow">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16"> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                            <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                        </button>
+                        <button class="ml-3 btn btn-dark badge-pill" id="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                            </svg>
+                        </button>
 
-  <div class="row">
+                        <div class="dropdown">
+                            <button class="btn btn-dark badge-pill dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="profilePic" src="https://afmnoco.com/wp-content/uploads/2019/07/74046195_s.jpg">
+                                Username
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item text-white" type="button">Account</button>
+                            <button class="dropdown-item text-white" type="button">Profile</button>
+                            <button class="dropdown-item text-white" type="button">Private Session</button>
+                            <button class="dropdown-item text-white" type="button">Settings</button>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item text-white" type="button">Update Spotify now</button>
+                            <button class="dropdown-item text-white" type="button">Log out</button>
+                        </div>
+                    </div>
+                </div>
 
-    <button class="ml-3 btn btn-dark badge-pill" id="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
-        <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
-      </svg>
-    </button>
+  <!-- </div> -->
 
-    <button class="ml-3 btn btn-dark badge-pill" id="arrow">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-      <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-    </svg>
-    </button>
-
-    <div class="dropdown">
-      <button class="btn btn-dark badge-pill dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img id="profilePic" src="https://afmnoco.com/wp-content/uploads/2019/07/74046195_s.jpg">
-        Username
-      </button>
-      <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
-        <button class="dropdown-item text-white" type="button">Account</button>
-        <button class="dropdown-item text-white" type="button">Profile</button>
-        <button class="dropdown-item text-white" type="button">Private Session</button>
-        <button class="dropdown-item text-white" type="button">Settings</button>
-        <div class="dropdown-divider"></div>
-        <button class="dropdown-item text-white" type="button">Update Spotify now</button>
-        <button class="dropdown-item text-white" type="button">Log out</button>
-      </div>
-    </div>
-
-  </div>
-  </div>
-
-  </div>
-
-  <div class="container">
+  <div class="container-fluid">
 
     <h4 class="mt-5">Good morning</h4>
 
   </div>
 
-  <div class="container mt-3">
+  <div class="container-fluid mt-3">
 
     <div class="row mb-2">
 
@@ -590,7 +586,6 @@
               </section>
             </div>
         </div>
-        
     </div>
 <!--      footer container  -->
     <div class="container-fluid footer-container">
