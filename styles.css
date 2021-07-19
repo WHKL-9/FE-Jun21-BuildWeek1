@@ -1,0 +1,111 @@
+
+.sideNavBar{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+li a{
+    color: lightgray;
+    font-size: small;
+}
+
+.mainMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.plusSignContainer{
+    background-color: gray;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.plusSign{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+}
+
+.likedSong{
+    width: 1rem;
+    height: 1rem;
+}
+
+.tertiaryMenu{
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.footer-container{
+   background-color:#202020	;
+
+}
+
+.footer-container .col-4{
+    color: lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+} 
+
+.footer-container .col-4 p{
+    margin-left: 0.4rem;
+    font-size: 0.75rem;
+} 
+
+.footer-container .col-4 .Artist{
+    font-size: 0.6rem ;
+}
+
+.footer-container .col-4 svg{
+    transform: scale(0.75);
+}
+
+body {
+    background-color: rgb(46, 42, 42) !important;
+    color: rgba(255, 255, 255, 0.842) !important;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .see-all {
+    display: inline;
+    text-decoration: none;
+    color: rgb(206, 203, 203);
+    float: right;
+    top: 0;
+    right: 2px;
+  }
+  #hero-section > h1 {
+    display: inline;
+    position: relative;
+    font-size: 20px;
+  }
+  #hero-section {
+    padding: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #hero-section > .container-fluid {
+    padding-top: 20px;
+  }
+  #album > .card {
+    min-height: 50px;
+    min-width: 100px;
+    border: black;
+  }
+  #album > .card > img {
+    border-radius: 4%;
+  }
+  .card-body {
+    height: 120px;
+    background-color: rgb(51, 46, 46) !important;
+  }
+
