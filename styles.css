@@ -69,11 +69,15 @@ li a{
     transform: scale(0.75);
 }
 
+
+
 body {
-    background-color: rgb(46, 42, 42) !important;
-    color: rgba(255, 255, 255, 0.842) !important;
+    background: rgb(102,16,5);
+    background: linear-gradient(180deg, rgba(102,16,5,1) 0%, rgba(0,0,15,1) 53%);
+    background-repeat: no-repeat;
     font-family: "Poppins", sans-serif;
-  }
+    color: rgba(255, 255, 255, 0.842) !important;
+}
   
   .see-all {
     display: inline;
@@ -109,3 +113,45 @@ body {
     background-color: rgb(51, 46, 46) !important;
   }
 
+
+
+h4 {
+    color: white;
+}
+
+img {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+#fontSize {
+    font-size: 11px !important;
+    text-align: center;
+}
+
+div h5 {
+    position: absolute !important;
+    top:17px !important;
+}
+
+.card {
+    background-color: rgba(41,43,44, 0.7) !important;
+}
+
+#arrow {
+    color: white;
+}
+
+.dropdown {
+    padding-left: 680px;;
+}
+
+.btn {
+    background-color: black;
+}
+
+#profilePic {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+}
