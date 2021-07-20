@@ -68,24 +68,15 @@ li a{
     transform: scale(0.75);
 }
 
-
-
 body {
     background: rgb(102,16,5);
-    background: linear-gradient(180deg, rgba(102,16,5,1) 0%, rgb(0, 0, 0) 35%);
+    background: linear-gradient(180deg, rgb(83, 13, 4) 0%, rgb(0, 0, 0) 35%);
     background-repeat: no-repeat;
     font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.842) !important;
 }
   
-   /* .see-all {
-    display: inline;
-    text-decoration: none;
-    color: rgb(206, 203, 203);
-    float: right;
-    top: 0;
-    right: 2px;
-  } */
+
 
   #hero-section > h1 {
     display: inline;
@@ -142,7 +133,7 @@ div h5 {
 }
 
 .dropdown {
-    padding-left: 890px;;
+    padding-left: 820px;;
 }
 
 .btn {
@@ -160,10 +151,6 @@ div h5 {
     border-radius: 0% !important;
 }
 
-/* #spaceBetween {
-    justify-content: space-between;
-} */
-
 .seeAll1 {
     position: absolute;
     right: 108px;
@@ -180,3 +167,175 @@ div h5 {
     font-size: 13px;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    line-height: 55px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    margin-bottom: 0px;
+    z-index: 3;
+  }
+  
+  .footercontainer {
+    position: relative;
+  }
+  
+  #play {
+    position: absolute;
+    top: 1px;
+    left: 700px;
+  }
+  
+  #containerFooter {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #forward {
+    position: absolute;
+    top: 2px;
+    left: 760px;
+  }
+  
+  #backward {
+    position: absolute;
+    top: 2px;
+    left: 650px;
+  }
+  
+  #shuffle {
+    position: absolute;
+    top: 2px;
+    left: 610px;
+  }
+  
+  #repeat {
+    position: absolute;
+    top: 2px;
+    left: 810px;
+  }
+  
+  #heart {
+    position: absolute;
+    top: 10px;
+    left: 180px;
+  }
+  
+  #queue {
+    position: absolute;
+    top: 10px;
+    left: 1250px;
+  }
+  
+  #device {
+    position: absolute;
+    top: 10px;
+    left: 1280px;
+  }
+  
+  #volume {
+    position: absolute;
+    top: 10px;
+    left: 1310px;
+  }
+  
+  progress {
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    max-height: 5px;
+    left: 490px;
+    top: 60px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+  }
+  
+  progress::-webkit-progress-value {
+    background: rgb(131, 129, 129);
+    border-radius: 100px;
+  }
+  
+  progress::-moz-progress-bar {
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+  
+  progress::-webkit-progress-value {
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+  
+  progress::-webkit-progress-bar {
+    background: rgb(131, 129, 129);
+    border-radius: 100px;
+  }
+  
+  #footerHolder {
+    display: inline;
+  }
+  #footerHolder img {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    max-height: 65px;
+    max-width: 65px;
+    object-fit: cover;
+    margin-left: 20px;
+  }
+  
+  #volumeProgress {
+    position: absolute;
+    display: inline-block;
+    width: 5%;
+    max-height: 5px;
+    left: 1350px;
+    top: 40px;
+    background: white;
+    border-radius: 50px;
+  }
+  
+  #songName {
+    position: absolute;
+    top: 20px;
+    left: 87px;
+  }
+  
+  #songName h4 {
+    font-size: 10px;
+  }
+  
+  #songName h3 {
+    font-size: 11px;
+  }
+  
+  #minute1 {
+    position: absolute;
+    top: 55px;
+    left: 460px;
+    font-size: 11px;
+  }
+  
+  #minute2 {
+    position: absolute;
+    top: 55px;
+    left: 930px;
+    font-size: 11px;
+  }
+
+  #aviciiSize {
+      width: 50px;
+      height: 50px;
+  }
+
+  #cardMargin {
+      margin-bottom: 75px;
+  }
+  
+  #footerButton {
+      border-radius: 50%;
+      background-color: rgb(19, 19, 19);
+      border: 0;
+  }
