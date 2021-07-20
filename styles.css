@@ -22,15 +22,32 @@ li a{
     background-color: gray;
     width: 1rem;
     height: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* display: flex;
+    flex-direction: row; */
+    position: relative;
+
 }
 
-.plusSign{
+.plus{
+    background: darkgray;
+    height: 1rem;
+    width: 1rem;
+}
+
+.secondaryMenu li a{
     display: flex;
     flex-direction: row;
     flex-flow: nowrap;
+    align-items: center;
+}
+
+li a:hover{
+    color:black;
+    background: darkgray;
+}
+
+li a:active{
+
 }
 
 .likedSong{
@@ -39,13 +56,14 @@ li a{
 }
 
 .tertiaryMenu{
-    height: 200px;
+    height: 350px;
     overflow-y: scroll;
 }
 
 .footer-container{
    background-color:#202020	;
-
+    position: absolute;
+    left: 0;
 }
 
 .footer-container .col-4{
@@ -72,60 +90,65 @@ li a{
 
 body {
     background: rgb(102,16,5);
-    background: linear-gradient(180deg, rgba(102,16,5,1) 0%, rgba(0,0,15,1) 53%);
+    background: linear-gradient(180deg, rgba(102,16,5,1) 0%, rgb(0, 0, 0) 35%);
     background-repeat: no-repeat;
     font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.842) !important;
 }
   
-  .see-all {
+   /* .see-all {
     display: inline;
     text-decoration: none;
     color: rgb(206, 203, 203);
     float: right;
     top: 0;
     right: 2px;
-  }
+  } */
+
   #hero-section > h1 {
     display: inline;
     position: relative;
-    font-size: 20px;
   }
-  #hero-section {
-    padding: 100px;
+    #hero-section {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+  } 
+
   #hero-section > .container-fluid {
     padding-top: 20px;
   }
   #album > .card {
-    min-height: 50px;
-    min-width: 100px;
+    max-height: 200px;
+    max-width: 105px;
     border: black;
   }
-  #album > .card > img {
-    border-radius: 4%;
-  }
-  .card-body {
-    height: 120px;
-    background-color: rgb(51, 46, 46) !important;
-  }
 
+  #album .card img {
+    border-radius: 15%;
+} 
+
+#hero-section img {
+    width: 108px;
+}
+/* 
+#album{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
 
 
 h4 {
     color: white;
 }
 
-img {
+#imageSize {
     width: 50px !important;
     height: 50px !important;
 }
 
 #fontSize {
     font-size: 11px !important;
-    text-align: center;
 }
 
 div h5 {
@@ -138,15 +161,17 @@ div h5 {
 }
 
 #arrow {
-    color: white;
+    color: rgb(255, 255, 255);
+    border-color: black;
 }
 
 .dropdown {
-    padding-left: 680px;;
+    padding-left: 890px;;
 }
 
 .btn {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: black;
 }
 
 #profilePic {
@@ -154,3 +179,93 @@ div h5 {
     height: 30px !important;
     border-radius: 50%;
 }
+
+#notRounded {
+    border-radius: 0% !important;
+}
+
+/* #spaceBetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+.seeAll1 {
+    position: absolute;
+    right: 108px;
+    top: 293px;
+    color: white;
+    font-size: 13px;
+}
+
+.seeAll2 {
+    position: absolute;
+    right: 108px;
+    top: 590px;
+    color: white;
+    font-size: 13px;
+}
+
+/* for testing */
+/* .horizontalCard, .verticalCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+
+
+.jumbotron{
+    min-width: 100%;
+    min-height: 20rem !important;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index:-1;
+    margin-bottom:0;
+}
+
+.jumbotronContainer .artist img{
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    min-width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.artist-info{
+    z-index:1;
+    position: absolute;
+    bottom:0;
+    color: white;
+
+}
+
+.artist-info p{
+    font-size:small;
+}
+
+.artist-info h1{
+    font-weight:900;
+}
+
+.hero-section-artist{
+    background: rgb(89,89,89);
+    background: linear-gradient(180deg, rgba(89,89,89,1) 0%, rgba(56,56,56,1) 12%, rgba(18,18,18,1) 100%);
+    min-height: 100vh;
+}
+
+.button.pause {
+    width: 74px;
+    height: 74px;
+    border-style: double;
+    border-width: 0px 0px 0px 37px;
+    border-color: #00D95F;
+    background-color:white;
+  }
+
+
+
+
