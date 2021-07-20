@@ -355,3 +355,55 @@ div h5 {
       background-color: rgb(19, 19, 19);
       border: 0;
   }
+
+  /* css for artist page */
+  .jumbotron{
+    min-width: 100%;
+    min-height: 20rem !important;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index:-1;
+    margin-bottom:0;
+}
+
+.jumbotronContainer .artist img{
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    min-width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.artist-info{
+    z-index:1;
+    position: absolute;
+    bottom:0;
+    color: white;
+
+}
+
+.artist-info p{
+    font-size:small;
+}
+
+.artist-info h1{
+    font-weight:900;
+}
+
+.hero-section-artist{
+    background: rgb(89,89,89);
+    background: linear-gradient(180deg, rgba(89,89,89,1) 0%, rgba(56,56,56,1) 12%, rgba(18,18,18,1) 100%);
+    min-height: 100vh;
+}
+
+.button.pause {
+    width: 74px;
+    height: 74px;
+    border-style: double;
+    border-width: 0px 0px 0px 37px;
+    border-color: #00D95F;
+    background-color:white;
+  }
