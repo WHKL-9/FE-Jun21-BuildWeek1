@@ -11,6 +11,14 @@ li a{
     font-size: small;
 }
 
+i{
+    font-size: 1rem;
+}
+
+.secondaryMenu img{
+    margin-left: -2px !important;
+} 
+
 .mainMenu{
     display: flex;
     flex-direction: row;
@@ -26,6 +34,7 @@ li a{
     position: relative;
 
 }
+
 
 .plus{
     background: darkgray;
@@ -45,9 +54,7 @@ li a:hover{
     background: darkgray;
 }
 
-li a:active{
 
-}
 
 .likedSong{
     width: 1rem;
@@ -80,9 +87,9 @@ li a:active{
     font-size: 0.6rem ;
 }
 
-.footer-container .col-4 svg{
+/* .footer-container .col-4 svg{
     transform: scale(0.75);
-}
+} */
 
 body {
     background: rgb(102,16,5);
@@ -204,6 +211,10 @@ div h5 {
     top: 1px;
     left: 700px;
   }
+
+  #play i{
+      transform: scale(2);
+  }
   
   #containerFooter {
     margin-top: 5px;
@@ -309,9 +320,10 @@ div h5 {
     max-height: 5px;
     left: 1350px;
     top: 40px;
-    background: white;
+    background: white!important;
     border-radius: 50px;
   }
+
   
   #songName {
     position: absolute;
@@ -356,9 +368,18 @@ div h5 {
       border: 0;
   }
 
+  /* all svg */
+  /* svg{
+      width: 30px;
+      height: 30px;
+  } */
+
+  
   /* css for artist page */
+
+ 
   .jumbotron{
-    min-width: 100%;
+    min-width: 100vw;
     min-height: 20rem !important;
     display: flex;
     overflow: hidden;
@@ -397,13 +418,166 @@ div h5 {
     background: rgb(89,89,89);
     background: linear-gradient(180deg, rgba(89,89,89,1) 0%, rgba(56,56,56,1) 12%, rgba(18,18,18,1) 100%);
     min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
 }
 
-.button.pause {
-    width: 74px;
-    height: 74px;
-    border-style: double;
-    border-width: 0px 0px 0px 37px;
-    border-color: #00D95F;
-    background-color:white;
+
+
+  .buttonBox{
+      width:3rem;
+      height:3rem;
+      background-color:#00D95F;
+      border-radius:50%;
+      position:absolute;
+      left: 1.5rem;
+      top:1.5rem;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+  } 
+
+
+  .button.play{
+      width: 1.5rem;
+      height: 1.5rem;
+      border-style: solid;
+      border-width: 0.75rem 0rem 0.75rem 1.5rem;
+      border-color: transparent transparent transparent white;
+      box-sizing: border-box;
+      background-color: transparent;
+      position: absolute;
+      left: 0.9rem;
+      top: 0.75rem;
+      transition: all ease-in 0.01s;
   }
+
+  .button.play:hover{
+    width: 1.5rem;
+    height:1.5rem;
+    border-style:double;
+    border-width: 0 0 0 0.9rem;
+    border-color: white;
+    background-color: transparent;
+    position: absolute;
+    left: 1.05em;
+    top:0.8rem;
+  }
+
+  .button.pause{
+      width: 1.5rem;
+      height:1.5rem;
+      border-style:double;
+      border-width: 0 0 0 0.9rem;
+      border-color: white;
+      background-color: transparent;
+      position: absolute;
+      left: 1.05em;
+      top:0.8rem;
+      transition: all ease-in 0.01s;
+  } 
+
+  .button.pause:hover{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-style: solid;
+    border-width: 0.75rem 0rem 0.75rem 1.5rem;
+    border-color: transparent transparent transparent white;
+    box-sizing: border-box;
+    background-color: transparent;
+    position: absolute;
+    left: 0.9rem;
+    top: 0.75rem;
+  }
+
+  .followButton{
+      position: absolute;
+      top: 1.9rem;
+      left: 6rem;
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .followButton button{
+      background: transparent !important;
+      border: 1px solid white;
+      color:white;
+  }
+
+  .followButton button:hover{
+    background: white !important;
+    color:black;
+}
+
+    .followButton p{
+        font-weight: bold;
+    }
+
+    /* Album page CSS */
+    #hero-container {
+        background: rgb(19, 19, 19);
+        background: linear-gradient(
+          0deg,
+          rgba(19, 19, 19, 1) 0%,
+          rgba(149, 52, 121, 1) 93%
+        );
+        color: white;
+      }
+      
+      #album-section > .container-fluid > .row > .col-3 > img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 25px;
+        margin-left: 10px;
+        position: absolute;
+        background-color: #571f47;
+      }
+      #album-section > .container-fluid > .row > .col-8 {
+        margin-top: 150px;
+        margin-bottom: 30px;
+        padding-left: 50px;
+        padding-right: 0%;
+      }
+      .display-4 {
+        letter-spacing: 1px;
+      }
+      #table-container {
+        padding: 0px;
+      }
+      #table-section > div > img {
+        height: 60px;
+        width: 60px;
+        margin-left: 45px;
+        margin-top: 20px;
+        padding: 2px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        display: inline;
+      }
+      #table-section > div {
+        background-color: #391832;
+      }
+      
+      .bi {
+        padding-left: 15px;
+      }
+      
+      #table-section {
+        background: rgb(14, 14, 14);
+      }
+      #table-container > table {
+        background-color: black;
+      }
+      
+      #color1 {
+        background-color: rgba(255, 255, 255, 0.8);
+        display:flex;
+        flex-direction: row;
+    
+      }
+      #table-container > table > thead {
+        background-color: #141214;
+      }
+      
