@@ -25,10 +25,9 @@
 
   <body>
 
-
     <div class="container-fluid mainContainer">
         <div class="row">
-            <div class="col-2 sideNavBar pt-2">
+            <div class="col-2 sideNavBar pt-2 d-none d-sm-none d-md-block">
                 <!-- side nav bar  -->
                     <div class="logo">
                         <h4 class="text-white">
@@ -164,206 +163,212 @@
                     </div>
             </div>
           
-            <div class="col-10 px-0">
-                <div class="col-10 jumbotronContainer px-0">
-                    <div class="jumbotron jumbotron-fluid artist">
-                       <img src="https://i.ytimg.com/vi/x3aMO8wLNyc/maxresdefault.jpg" 
-                       alt="queen + adam lambert around the world live"
-                       class="img-fluid"
-                       >
-                       <div class="container-fluid artist-info no-gutters">
-                          <p class="my-0">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3EABEC" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-                                  <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                              </svg>
-                              Verified Artist
-                          </p>
-                          <h1>Queen</h1>
-                          <p>37,120,733 monthly listeners</p>
-                       </div>
-                    </div> 
-                    <div class="hero-section-artist ">
-                        <!-- <div class="buttonBox">
-                            <button class='button play'>
-                            </button>
+            <div class="col-10 mx-n3">
+                <div class="row">
+                    <div class="col-12 jumbotronContainer">
+                        <div class="jumbotron jumbotron-fluid artist">
+                           <img src="https://i.ytimg.com/vi/x3aMO8wLNyc/maxresdefault.jpg"
+                           alt="queen + adam lambert around the world live"
+                           class="img-fluid"
+                           >
+                           <div class="container-fluid artist-info no-gutters">
+                              <p class="my-0">
+                                <i class="fas fa-certificate"></i>
+                                <i class="fas fa-check"></i>
+                                  Verified Artist
+                              </p>
+                              <h1>Queen</h1>
+                              <p>37,120,733 monthly listeners</p>
+                           </div>
                         </div>
-                        <br> -->
-
-                        <div class="buttonBox">
-                            <button class='button pause'>
-                            </button>
-                        </div>
-
-                      
-                        <div class="followButton">
-                            <button type="button" class="btn btn-outline-secondary">Follow</button>
-                            <p class="ml-4">. . . </p>
-                        </div>
-
-                      <!--Artist table starts here-->
-
-                  <div class="container-fluid col-8" id="artistTable">
-                  <h3 id="popular">Popular</h3>
-                      <table class="table table-hover table-borderless text-white">
-                        <tbody>
-                          <tr class="queenTr">
-                            <th class="float-right" scope="row" class="col-1">1</th>
-                            <td class="col-1"><img id="queenSize" src="https://i.scdn.co/image/ab67616d0000b27358aa659299939bc52a2dbc22"/></td>
-                            <td class="pl-0">Another One Bites The Dust - Remastered 2011</td>
-                            <td>1,432,456,873</td>
-                            <td>3:34</td>
-                          </tr>
-                          <tr class="queenTr">
-                            <th class="float-right" scope="row">2</th>
-                            <td><img id="queenSize" src="https://m.media-amazon.com/images/I/51mIgSFc3PL._CR0,69,640,640_UX256.jpg"/></td>
-                            <td class="pl-0">Bohemian Rhapsody - Remastered 2011</td>
-                            <td>1,873,645,163</td>
-                            <td>5:54</td>
-                          </tr>
-                          <tr class="queenTr">
-                            <th class="float-right" scope="row">3</th>
-                            <td><img id="queenSize" src="https://lh3.googleusercontent.com/proxy/JKd9bJOOYcha0kLGcxonEPv5MV4qFdZUBkq2PJB1fatnY3ragDsq4A-UAT559I8CTjaYZXi7ZGC6-OJWIX7FkxYo5oF7KRiepxg8Ag-US_2xrtOzlnm55MAttf1DPmei7Mc2VBAcuWoqQGXqg3O_R4duXos"/></td>
-                            <td class="pl-0">Don't Stop Me Now - Remastered 2011</td>
-                            <td>1,923,274,334</td>
-                            <td>3:29</td>
-                          </tr>
-                          <tr class="queenTr">
-                            <th class="float-right" scope="row">4</th>
-                            <td><img id="queenSize" src="https://lh3.googleusercontent.com/proxy/u46juAWse1YJ1V-1ukdPFztKLV1HfbhuuBV2l3eh8XUChxfSD-uSDjNBT2h7yy5pX-NfTHEFryDj2Q6M1BLjsDGL338wdzdK1NNQKAuf6e3mG99Kdq5bfDOWO__1kFmipoOK0slFMJK1FYBKs2738AiG-W76EWkK9yEJR8ejOg-m_ez8kBNNctZzXtaDi7WasKnhzsL6QH728Q"/></td>
-                            <td class="pl-0">Under Pressure - Remastered 2011</td>
-                            <td>934,636,443</td>
-                            <td>4:08</td>
-                          </tr>
-                          <tr class="queenTr">
-                            <th class="float-right" scope="row">5</th>
-                            <td><img id="queenSize" src="https://upload.wikimedia.org/wikipedia/en/e/ea/Queen_News_Of_The_World.png"/></td>
-                            <td class="pl-0">We Will Rock You - Remastered</td>
-                            <td>705,234,665</td>
-                            <td>2:02</td>
-                          </tr>
-                        </tbody>
-                      </table>
-
                     </div>
-                      <div class="container col-12" id="artistPick">
-                      <h4 class="card-title ml-3" id="artistPickSize">Artist Pick</h6>
-                      <div id="queenCard" class="card rounded border-0 text-white bg-dark mb-2 float-right" style="width: 240px; height: 60px;">
-                        <div class="row no-gutters">
-                          <div class="col-md-2">
-                            <img id="imageSizeQueen" src="https://i.ebayimg.com/thumbs/images/g/U44AAOSwiZpfagWN/s-l96.jpg" class="rounded-left" alt="...">
-                          </div>
-                          <div class="col-md-10">
-                            <div class="card-body">
-                              <h6 id="fontSize"  class="card-title ml-3 position1">Posted by Queen</h6>
-                              <h5 id="fontSize" class="card-title ml-3 bestOf">Queen Best Of</h5>
-                              <h6 id="fontSize" class="card-text ml-3 position2">Playlist</h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-            </div>
-            
-        </div>
-    </div>
-
+                </div>
+                <div class="hero-section-artist ">
+                    <div class="buttonBox">
+                        <button class='button pause'>
+                        </button>
                     </div>
                     
-                  </div>
-            </div>
-        </div>
-    </div>
-                      
+                    <div class="followButton">
+                        <button type="button" class="btn btn-outline-secondary">Follow</button>
+                        <p class="ml-4">. . . </p>
                     </div>
-                  </div>
+
+                    <!--Artist table starts here-->
+            
+                    <div class="row artistTableContainer">
+                        <div class="col-9">
+                            <div class="container-fluid" id="artistTable">
+                                <h3 id="popular">Popular</h3>
+                                    <table class="table table-hover table-borderless text-white">
+                                    <tbody>
+                                        <tr class="queenTr">
+                                        <th class="float-right" scope="row" class="col-1">1</th>
+                                        <td class="col-1"><img id="queenSize" src="https://i.scdn.co/image/ab67616d0000b27358aa659299939bc52a2dbc22"/></td>
+                                        <td class="pl-0">Another One Bites The Dust - Remastered 2011</td>
+                                        <td>1,432,456,873</td>
+                                        <td>3:34</td>
+                                        </tr>
+                                        <tr class="queenTr">
+                                        <th class="float-right" scope="row">2</th>
+                                        <td><img id="queenSize" src="https://m.media-amazon.com/images/I/51mIgSFc3PL._CR0,69,640,640_UX256.jpg"/></td>
+                                        <td class="pl-0">Bohemian Rhapsody - Remastered 2011</td>
+                                        <td>1,873,645,163</td>
+                                        <td>5:54</td>
+                                        </tr>
+                                        <tr class="queenTr">
+                                        <th class="float-right" scope="row">3</th>
+                                        <td><img id="queenSize" src="https://lh3.googleusercontent.com/proxy/JKd9bJOOYcha0kLGcxonEPv5MV4qFdZUBkq2PJB1fatnY3ragDsq4A-UAT559I8CTjaYZXi7ZGC6-OJWIX7FkxYo5oF7KRiepxg8Ag-US_2xrtOzlnm55MAttf1DPmei7Mc2VBAcuWoqQGXqg3O_R4duXos"/></td>
+                                        <td class="pl-0">Don't Stop Me Now - Remastered 2011</td>
+                                        <td>1,923,274,334</td>
+                                        <td>3:29</td>
+                                        </tr>
+                                        <tr class="queenTr">
+                                        <th class="float-right" scope="row">4</th>
+                                        <td><img id="queenSize" src="https://lh3.googleusercontent.com/proxy/u46juAWse1YJ1V-1ukdPFztKLV1HfbhuuBV2l3eh8XUChxfSD-uSDjNBT2h7yy5pX-NfTHEFryDj2Q6M1BLjsDGL338wdzdK1NNQKAuf6e3mG99Kdq5bfDOWO__1kFmipoOK0slFMJK1FYBKs2738AiG-W76EWkK9yEJR8ejOg-m_ez8kBNNctZzXtaDi7WasKnhzsL6QH728Q"/></td>
+                                        <td class="pl-0">Under Pressure - Remastered 2011</td>
+                                        <td>934,636,443</td>
+                                        <td>4:08</td>
+                                        </tr>
+                                        <tr class="queenTr">
+                                        <th class="float-right" scope="row">5</th>
+                                        <td><img id="queenSize" src="https://upload.wikimedia.org/wikipedia/en/e/ea/Queen_News_Of_The_World.png"/></td>
+                                        <td class="pl-0">We Will Rock You - Remastered</td>
+                                        <td>705,234,665</td>
+                                        <td>2:02</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-3 d-none d-sm-none d-md-block">
+                            <div id="artistPick">
+                                <div>
+                                    <h4 class="card-title"id="artistPickSize">Artist Pick</h4>
+                                </div>
+                                <div class="card transparentCard mb-3">
+                                    <div class="row no-gutters artist-queenCard pu-0">
+                                      <div class="col-md-4">
+                                        <img id="imageSizeQueen" src="https://i.ebayimg.com/thumbs/images/g/U44AAOSwiZpfagWN/s-l96.jpg" 
+                                        class="rounded-left img-fluid" 
+                                        alt="...">
+                                      </div>
+                                      <div class="col-md-8">
+                                        <div class="card-body queenBestOf">
+                                          <p class="card-title py-0 my-1 small">Posted by Queen</h>
+                                          <p class="card-text py-0 my-1 small whiteText">Queen Best Of</p>
+                                          <p class="card-text py-0 my-1 small">Playlist</p>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <!-- <div id="queenCard" class="card rounded border-0 text-white bg-dark mb-2">
+                                    <div class="row no-gutters">
+                                    <div class="col-2">
+                                        <img id="imageSizeQueen" src="https://i.ebayimg.com/thumbs/images/g/U44AAOSwiZpfagWN/s-l96.jpg" class="rounded-left" alt="...">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                        <h6 id=""  class="card-title ml-3 position1">Posted by Queen</h6>
+                                        <h5 id="" class="card-title ml-3 bestOf">Queen Best Of</h5>
+                                        <h6 id="" class="card-text ml-3 position2">Playlist</h6>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </div>      
+    </div>    
+            
 <!--      footer container  -->
 <div class="container-fluid mediaPlayerFooter">
-    <div class="row">
-      <div class="col-2 leftFooter">
-        <!-- horizontal Card - currently played Song -->
-              <div class="currentlyPlayed">
-                  <img src="https://i.pinimg.com/originals/f2/fd/1a/f2fd1a3d428b6a0b1389e66c98451f44.jpg"
-                  class="img-fluid"
-                  id="aviciiSize">
-              </div>
-              <div class="currentPlayedSongInfo ml-2 mt-3">
-                <p class="card-text my-0">Wake Me Up</p>
-                <p class="card-text my-0"><small class="text-muted">Avicii</small></p>
-              </div>
-              <div id="heart">
-                <button id="footerButton">
-                  <i class="far fa-heart text-white"></i>
-                </button>
-              </div>
-      </div>
-      <div class="col-8 middleFooter mt-2">
-        <div class="col-12 mt-2">
-          <div id="shuffle">
-            <button id="footerButton">
-              <i class="fas fa-random text-white"></i>
-            </button>
-          </div>
-  
-          <div id="backward">
-            <button id="footerButton">
-              <i class="fas fa-step-backward text-white"></i>
-            </button>
-          </div>
-  
-          <div id="play">
-            <button id="footerButton">
-              <i class="fas fa-play-circle text-white"></i>
-          </button>
-          </div>
-  
-          <div id="forward">
-            <button id="footerButton">
-              <i class="fas fa-step-forward text-white"></i>
-            </button>
-          </div>
-  
-          <div id="repeat">
-            <button id="footerButton">
-              <i class="fas fa-redo-alt text-white"></i>
-            </button>
-          </div>
-        
-        </div>
-        <div class="col-12">
-          <p id="minute1" class="mx-2 my-2">1:32</p>
-          <progress class="mx-2 my-2" id="file" max="190" value="80" fill="white"></progress>
-          <p id="minute2" class="mx-2 my-2">2:34</p>
-        </div>
-      </div>
-      <div class="col-2 rightFooter mt-4">
-  
-          <div id="queue">
-            <button id="footerButton">
-              <i class="fas fa-list text-white"></i>
-            </button>
-          </div>
-  
-          <div id="device">
-            <button id="footerButton">
-              <i class="fas fa-laptop text-white"></i>
-            </button>
-          </div>
-  
-          <div id="volume" class="mr-1">
-            <button id="footerButton">
-              <i class="fas fa-volume-up text-white"></i>
-            </button>
-          </div>
-          
-          <progress id="volumeProgress" max="90" value="50" fill="white"></progress>
-          
-      </div>
-  
+  <div class="row">
+    <div class="col-2 leftFooter d-none d-sm-none d-md-flex">
+      <!-- horizontal Card - currently played Song -->
+            <div class="currentlyPlayed">
+                <img src="https://i.pinimg.com/originals/f2/fd/1a/f2fd1a3d428b6a0b1389e66c98451f44.jpg"
+                class="img-fluid"
+                id="aviciiSize">
+            </div>
+            <div class="currentPlayedSongInfo ml-2 mt-3">
+              <p class="card-text my-0">Wake Me Up</p>
+              <p class="card-text my-0"><small class="text-muted">Avicii</small></p>
+            </div>
+            <div id="heart">
+              <button id="footerButton">
+                <i class="far fa-heart text-white"></i>
+              </button>
+            </div>
     </div>
+    <div class="col-8 middleFooter mt-2">
+      <div class="col-12 mt-2">
+        <div id="shuffle">
+          <button id="footerButton">
+            <i class="fas fa-random text-white"></i>
+          </button>
+        </div>
+
+        <div id="backward">
+          <button id="footerButton">
+            <i class="fas fa-step-backward text-white"></i>
+          </button>
+        </div>
+
+        <div id="play">
+          <button id="footerButton">
+            <i class="fas fa-play-circle text-white"></i>
+        </button>
+        </div>
+
+        <div id="forward">
+          <button id="footerButton">
+            <i class="fas fa-step-forward text-white"></i>
+          </button>
+        </div>
+
+        <div id="repeat">
+          <button id="footerButton">
+            <i class="fas fa-redo-alt text-white"></i>
+          </button>
+        </div>
+      
+      </div>
+      <div class="col-12">
+        <p id="minute1" class="mx-2 my-2">1:32</p>
+        <progress class="mx-2 my-2" id="file" max="190" value="80" fill="white"></progress>
+        <p id="minute2" class="mx-2 my-2">2:34</p>
+      </div>
+    </div>
+    <div class="col-2 rightFooter mt-4 d-none d-sm-none d-md-flex">
+        <div id="queue">
+          <button id="footerButton">
+            <i class="fas fa-list text-white"></i>
+          </button>
+        </div>
+
+        <div id="device">
+          <button id="footerButton">
+            <i class="fas fa-laptop text-white"></i>
+          </button>
+        </div>
+
+        <div id="volume" class="mr-1">
+          <button id="footerButton">
+            <i class="fas fa-volume-up text-white"></i>
+          </button>
+        </div>
+        
+        <progress id="volumeProgress" max="90" value="50" fill="white"></progress>
+        
+    </div>
+
   </div>
+</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

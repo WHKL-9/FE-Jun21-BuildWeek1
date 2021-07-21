@@ -200,10 +200,10 @@ h4 {
     font-size: 11px !important;
 }
 
-div h5 {
+/* div h5 {
     position: absolute !important;
     top:17px !important;
-}
+} */
 
 .card {
     background-color: rgba(41,43,44, 0.7) !important;
@@ -606,6 +606,20 @@ progress {
         font-weight: bold;
     }
 
+    .artist-info.fa-certificate{
+      position: relative;
+    }
+    .fa-certificate{
+      color:#1C9CEA;
+    }
+
+    .fa-check{
+      font-size: 0.4rem;
+      position: absolute;
+      left: 20px;
+      bottom: 6.1rem;
+    }
+
     /* Album page CSS */
     #hero-container {
       background: rgb(19, 19, 19);
@@ -713,9 +727,9 @@ progress {
 
       /* css for artist page  */
       #artistTable {
-        position: absolute;
+        /* position: absolute;
         top: 100px;
-        left: 0px;
+        left: 0px; */
         font-size: 11px;
     }
 
@@ -723,11 +737,11 @@ progress {
         color: white !important;
     }
 
-    #artistPick {
+    /* #artistPick {
         position: absolute;
         top: 130px;
         right: 240px !important;
-    }
+    } */
 
     #queenCard {
         border-radius: 0% !important;
@@ -743,25 +757,71 @@ progress {
         height: 30px;
     }
 
-    .position1 {
+    /* .position1 {
         position: absolute;
         top: 0px;
-    }
+    } */
 
-    .position2 {
+    /* .position2 {
         position: absolute;
         top: 35px;
-    }
+    } */
 
-    #artistPickSize {
+    /* #artistPickSize {
         position: absolute;
         bottom: 73px;
         right: 170px;
         font-size: 18px;
-    }
+    } */
 
-    #imageSizeQueen {
+    /* #imageSizeQueen {
         width: 55px;
         height: 55px;
+    } */
+
+    #imageSizeQueen{
+      object-fit: cover;
     }
-      
+
+    .queenBestOf p{
+      color:lightgray;
+    }
+
+    .queenBestOf .whiteText{
+      color: white;
+      font-weight: bold;
+    }
+
+    .artist-queenCard{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .transparentCard{
+      background-color: transparent !important;
+    }
+
+    .artistTableContainer{
+      position: relative;
+    }
+
+    .artistTableContainer .col-3{
+      position: absolute;
+      top: 3rem;
+      right: 0.5rem;
+    }
+
+
+    
+
+    .artistTableContainer{
+      position: relative;
+    }
+
+    #artistTable{
+      position: absolute;
+      top: 3rem;
+      left: 1.5rem;
+    }
