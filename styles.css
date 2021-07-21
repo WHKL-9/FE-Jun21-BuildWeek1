@@ -209,6 +209,22 @@ div h5 {
     background-color: rgba(41,43,44, 0.7) !important;
 }
 
+.card-body h5{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.good-morning-cards .card{
+  background-color: rgba(41,43,44, 0.7) !important;
+  max-width: 300px;
+}
+
+
+
+.recentlyPlayed-Cards .card{
+  background-color: rgba(41,43,44, 0.7) !important;
+}
+
 
 
 .btn {
@@ -483,6 +499,10 @@ progress {
 
 .artist-info h1{
     font-weight:900;
+}
+
+.hero-section{
+  margin-bottom: 6rem;
 }
 
 .hero-section-artist{
