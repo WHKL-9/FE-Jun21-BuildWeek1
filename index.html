@@ -614,7 +614,92 @@
     </div>
     </div>
 <!--      footer container  -->
-    <div class="footercontainer">
+<div class="container-fluid mediaPlayerFooter">
+  <div class="row">
+    <div class="col-2 leftFooter">
+      <!-- horizontal Card - currently played Song -->
+            <div class="currentlyPlayed">
+                <img src="https://i.pinimg.com/originals/f2/fd/1a/f2fd1a3d428b6a0b1389e66c98451f44.jpg"
+                class="img-fluid"
+                id="aviciiSize">
+            </div>
+            <div class="currentPlayedSongInfo ml-2 mt-3">
+              <p class="card-text my-0">Wake Me Up</p>
+              <p class="card-text my-0"><small class="text-muted">Avicii</small></p>
+            </div>
+            <div id="heart">
+              <button id="footerButton">
+                <i class="far fa-heart text-white"></i>
+              </button>
+            </div>
+    </div>
+    <div class="col-8 middleFooter mt-2">
+      <div class="col-12 mt-2">
+        <div id="shuffle">
+          <button id="footerButton">
+            <i class="fas fa-random text-white"></i>
+          </button>
+        </div>
+
+        <div id="backward">
+          <button id="footerButton">
+            <i class="fas fa-step-backward text-white"></i>
+          </button>
+        </div>
+
+        <div id="play">
+          <button id="footerButton">
+            <i class="fas fa-play-circle text-white"></i>
+        </button>
+        </div>
+
+        <div id="forward">
+          <button id="footerButton">
+            <i class="fas fa-step-forward text-white"></i>
+          </button>
+        </div>
+
+        <div id="repeat">
+          <button id="footerButton">
+            <i class="fas fa-redo-alt text-white"></i>
+          </button>
+        </div>
+      
+      </div>
+      <div class="col-12">
+        <p id="minute1" class="mx-2 my-2">1:32</p>
+        <progress class="mx-2 my-2" id="file" max="190" value="80" fill="white"></progress>
+        <p id="minute2" class="mx-2 my-2">2:34</p>
+      </div>
+    </div>
+    <div class="col-2 rightFooter mt-4">
+
+        <div id="queue">
+          <button id="footerButton">
+            <i class="fas fa-list text-white"></i>
+          </button>
+        </div>
+
+        <div id="device">
+          <button id="footerButton">
+            <i class="fas fa-laptop text-white"></i>
+          </button>
+        </div>
+
+        <div id="volume" class="mr-1">
+          <button id="footerButton">
+            <i class="fas fa-volume-up text-white"></i>
+          </button>
+        </div>
+        
+        <progress id="volumeProgress" max="90" value="50" fill="white"></progress>
+        
+    </div>
+
+  </div>
+</div>
+
+    <!-- <div class="footercontainer">
     <footer class="footer">
       <div class="container-fluid" id="containerFooter">
       <div id="play">
@@ -680,7 +765,7 @@
       <div class="minutes" color="white"><h6 id="minute1">1:32</h6><h6 id="minute2">-2:34</h6></div>
 
       </footer>
-      </div>
+    </div> -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

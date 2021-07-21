@@ -7,6 +7,7 @@
 
 .mainContainer{
   max-width: 100vw;
+  position: relative;
 }
 
 li a{
@@ -192,8 +193,8 @@ div h5 {
     color: white;
     font-size: 13px;
 }
-
-.footer {
+/* footer css - old */
+/* .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -215,9 +216,7 @@ div h5 {
     left: 700px;
   }
 
-  #play i{
-      transform: scale(2);
-  }
+  
   
   #containerFooter {
     margin-top: 5px;
@@ -272,36 +271,9 @@ div h5 {
     left: 1310px;
   }
   
-  progress {
-    position: absolute;
-    display: inline-block;
-    width: 30%;
-    max-height: 5px;
-    left: 490px;
-    top: 60px;
-    background: rgb(255, 255, 255);
-    border-radius: 50px;
-  }
+ 
   
-  progress::-webkit-progress-value {
-    background: rgb(131, 129, 129);
-    border-radius: 100px;
-  }
   
-  progress::-moz-progress-bar {
-    background: rgb(255, 255, 255);
-    border-radius: 100px;
-  }
-  
-  progress::-webkit-progress-value {
-    background: rgb(255, 255, 255);
-    border-radius: 100px;
-  }
-  
-  progress::-webkit-progress-bar {
-    background: rgb(131, 129, 129);
-    border-radius: 100px;
-  }
   
   #footerHolder {
     display: inline;
@@ -342,19 +314,7 @@ div h5 {
     font-size: 11px;
   }
   
-  #minute1 {
-    position: absolute;
-    top: 55px;
-    left: 460px;
-    font-size: 11px;
-  }
   
-  #minute2 {
-    position: absolute;
-    top: 55px;
-    left: 930px;
-    font-size: 11px;
-  }
 
   #aviciiSize {
       width: 50px;
@@ -365,21 +325,115 @@ div h5 {
       margin-bottom: 75px;
   }
   
-  #footerButton {
-      border-radius: 50%;
-      background-color: transparent !important;
-      border: 0;
-  }
+ 
 
   #forwardInFooter{
     border-radius: 50%;
     background-color: transparent !important;
     border: 0;
-  }
+  } */
+
+  /* css for footer - new */
+
+.mediaPlayerFooter{
+  position: absolute;
+  left:0;
+  bottom:0;
+  background-color: #181818;
+  height: 5rem;
+  
+}
+
+.mediaPlayerFooter .leftFooter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+.mediaPlayerFooter .middleFooter .col-12{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+}
+
+
+.mediaPlayerFooter img{
+  height: 4rem;
+  width: 4rem;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  top: 0.5rem;
+} 
+
+.mediaPlayerFooter .card{
+  background-color: #181818;
+}
+
+.currentPlayed {
+  display: flex;
+  flex-flow: row;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.ArtistAndSong{
+  display: block;
+}
+
+#footerButton {
+  margin-left: 0.3rem;
+  background-color: transparent;
+  border: 0;
+}
+
+#play i{
+  transform: scale(1.7);
+}
+
+progress::-webkit-progress-value {
+  background: rgb(131, 129, 129);
+  border-radius: 100px;
+}
+
+progress::-moz-progress-bar {
+  background: rgb(255, 255, 255);
+  border-radius: 100px;
+}
+
+progress::-webkit-progress-value {
+  background: rgb(255, 255, 255);
+  border-radius: 100px;
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(131, 129, 129);
+  border-radius: 100px;
+}
+
+progress {
+  margin-top: 10px;
+  display: inline-block;
+  width: 30%;
+  max-height: 5px;
+  left: 490px;
+  top: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.rightFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
 
   /* all svg */
   /* svg{
-      width: 30px;
+      width: 0px;
       height: 30px;
   } */
 
