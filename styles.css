@@ -6,9 +6,14 @@
 }
 
 .mainContainer{
-  max-width: 100vw;
+  max-width: 100vw !important;
   position: relative;
 }
+
+.mainContainer .col-10{
+  /* max-width: 70rem; */
+}
+
 
 li a{
     color: lightgray;
@@ -29,22 +34,6 @@ i{
     justify-content: flex-start;
 }
 
-.plusSignContainer{
-    background-color: gray;
-    width: 1rem;
-    height: 1rem;
-    /* display: flex;
-    flex-direction: row; */
-    position: relative;
-
-}
-
-
-.plus{
-    background: darkgray;
-    height: 1rem;
-    width: 1rem;
-}
 
 .secondaryMenu li a{
     display: flex;
@@ -68,6 +57,18 @@ li a:hover{
 .tertiaryMenu{
     height: 350px;
     overflow-y: scroll;
+}
+
+.tertiaryMenu::-webkit-scrollbar {
+  background-color: rgb(157, 158, 158);
+  height: 5px;
+  width: 5px;
+}
+.tertiaryMenu::-webkit-scrollbar-thumb {
+  background-color: #53b82b;
+}
+.tertiaryMenu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .footer-container{
@@ -102,8 +103,36 @@ body {
     font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.842) !important;
 }
-  
 
+.arrowsAndDropdown{
+  position: relative; 
+}
+
+.dropdown {
+  position: absolute;
+  top: 0.4rem;
+  right: 1rem;
+}
+
+.buttonLeft{
+  position: absolute;
+  top: 0.4rem;
+  left: 0rem;
+}
+
+.buttonRight{
+  position: absolute;
+  top: 0.4rem;
+  left: 4rem;
+}
+
+.recentPlayed-Section{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  /* max-width: 67rem; */
+}
 
   #hero-section > h1 {
     display: inline;
@@ -131,6 +160,32 @@ body {
     width: 108px;
 }
 
+.good-morning-cards, .recentlyPlayed-Cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+.card{
+  border: 0;
+}
+
+
+
+
+/* .hero-section-borderless{
+  position: relative;
+}
+
+.hero-section-borderless .container-fluid{
+  position: absolute;
+  left:0;
+} */
+
+
+
+
 
 h4 {
     color: white;
@@ -154,14 +209,7 @@ div h5 {
     background-color: rgba(41,43,44, 0.7) !important;
 }
 
-#arrow {
-    color: rgb(255, 255, 255);
-    border-color: black;
-}
 
-.dropdown {
-    padding-left: 820px;;
-}
 
 .btn {
     background-color: rgba(0, 0, 0, 0.7);
@@ -179,17 +227,17 @@ div h5 {
 }
 
 .seeAll1 {
-    position: absolute;
+    /* position: absolute;
     right: 108px;
-    top: 293px;
+    top: 293px; */
     color: white;
     font-size: 13px;
 }
 
 .seeAll2 {
-    position: absolute;
+    /* position: absolute;
     right: 108px;
-    top: 590px;
+    top: 590px; */
     color: white;
     font-size: 13px;
 }
@@ -210,12 +258,7 @@ div h5 {
     position: relative;
   }
   
-  #play {
-    position: absolute;
-    top: 1px;
-    left: 700px;
-  }
-
+ 
   
   
   #containerFooter {
@@ -223,53 +266,8 @@ div h5 {
     margin-bottom: 10px;
   }
   
-  #forward {
-    position: absolute;
-    top: 2px;
-    left: 760px;
-  }
+ 
   
-  #backward {
-    position: absolute;
-    top: 2px;
-    left: 650px;
-  }
-  
-  #shuffle {
-    position: absolute;
-    top: 2px;
-    left: 610px;
-  }
-  
-  #repeat {
-    position: absolute;
-    top: 2px;
-    left: 810px;
-  }
-  
-  #heart {
-    position: absolute;
-    top: 10px;
-    left: 180px;
-  }
-  
-  #queue {
-    position: absolute;
-    top: 10px;
-    left: 1250px;
-  }
-  
-  #device {
-    position: absolute;
-    top: 10px;
-    left: 1280px;
-  }
-  
-  #volume {
-    position: absolute;
-    top: 10px;
-    left: 1310px;
-  }
   
  
   
@@ -336,7 +334,7 @@ div h5 {
   /* css for footer - new */
 
 .mediaPlayerFooter{
-  position: absolute;
+  position: fixed;
   left:0;
   bottom:0;
   background-color: #181818;
@@ -430,6 +428,16 @@ progress {
   flex-direction: row;
   justify-content:flex-start;
 }
+
+.showsToTry{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+
 
   /* all svg */
   /* svg{
@@ -580,67 +588,160 @@ progress {
 
     /* Album page CSS */
     #hero-container {
-        background: rgb(19, 19, 19);
-        background: linear-gradient(
-          0deg,
-          rgba(19, 19, 19, 1) 0%,
-          rgba(149, 52, 121, 1) 93%
-        );
-        color: white;
-      }
-      
-      #album-section > .container-fluid > .row > .col-3 > img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 25px;
-        margin-left: 10px;
-        position: absolute;
-        background-color: #571f47;
-      }
-      #album-section > .container-fluid > .row > .col-8 {
-        margin-top: 150px;
-        margin-bottom: 30px;
-        padding-left: 50px;
-        padding-right: 0%;
-      }
-      .display-4 {
-        letter-spacing: 1px;
-      }
-      #table-container {
-        padding: 0px;
-      }
-      #table-section > div > img {
-        height: 60px;
-        width: 60px;
-        margin-left: 45px;
-        margin-top: 20px;
-        padding: 2px;
-        margin-bottom: 20px;
-        border-radius: 50%;
-        display: inline;
-      }
-      #table-section > div {
-        background-color: #391832;
-      }
-      
-      .bi {
-        padding-left: 15px;
-      }
-      
-      #table-section {
-        background: rgb(14, 14, 14);
-      }
-      #table-container > table {
-        background-color: black;
-      }
-      
-      #color1 {
-        background-color: rgba(255, 255, 255, 0.8);
-        display:flex;
-        flex-direction: row;
+      background: rgb(19, 19, 19);
+      background: linear-gradient(
+        0deg,
+        rgba(19, 19, 19, 1) 0%,
+        rgba(149, 52, 121, 1) 93%
+      );
+      color: white;
+    }
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
     
-      }
-      #table-container > table > thead {
-        background-color: #141214;
-      }
+    a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .previous,
+    .next {
+      background-color: #0a0a0a;
+      color: rgb(255, 253, 253);
+    }
+    
+    .round {
+      border-radius: 50%;
+    }
+    #album-section > .container-fluid > .row > .col-4 {
+      padding-right: 0px;
+    }
+    #album-section > .container-fluid > .row > .col-4 > img {
+      max-width: 100%;
+      min-width: 150px;
+      min-height: 150px;
+      max-height: 100%;
+    
+      margin-top: 25px;
+      margin-left: 10px;
+      position: absolute;
+      background-color: #571f47;
+    }
+    #album-section > .container-fluid > .row > .col-10 {
+      margin-top: 150px;
+      margin-bottom: 30px;
+      padding-left: 0px;
+      padding-right: 0%;
+    }
+    .display-4 {
+      letter-spacing: 1px;
+    }
+    #table-container {
+      padding: 0px;
+    }
+    #table-section > div > img {
+      height: 60px;
+      width: 60px;
+      margin-left: 45px;
+      margin-top: 20px;
+      padding: 2px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      display: inline;
+    }
+    #table-section > div {
+      background-color: #391832;
+    }
+    
+    .bi {
+      padding-left: 15px;
+    }
+    
+    #table-section {
+      background: rgb(14, 14, 14);
+    }
+    #table-container > table {
+      background-color: black;
+    }
+    #table-container > table > tbody > tr:hover {
+      background-color: rgb(107, 98, 98);
+    }
+    
+    #color1 {
+      height: 6rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      flex-direction: row;
+    }
+    #table-container > table > thead {
+      background-color: #141214;
+    }
+    #heart {
+      position: absolute;
+      left: 1.5rem;
+      top: 1.5rem;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      display: inline;
+    }
+
+      /* css for artist page  */
+      #artistTable {
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        font-size: 11px;
+    }
+
+    .queenTr:hover {
+        color: white !important;
+    }
+
+    #artistPick {
+        position: absolute;
+        top: 130px;
+        right: 240px !important;
+    }
+
+    #queenCard {
+        border-radius: 0% !important;
+        background-color: transparent !important;
+    }
+
+    #popular {
+        font-size: 18px;
+    }
+
+    #queenSize {
+        width: 30px;
+        height: 30px;
+    }
+
+    .position1 {
+        position: absolute;
+        top: 0px;
+    }
+
+    .position2 {
+        position: absolute;
+        top: 35px;
+    }
+
+    #artistPickSize {
+        position: absolute;
+        bottom: 73px;
+        right: 170px;
+        font-size: 18px;
+    }
+
+    #imageSizeQueen {
+        width: 55px;
+        height: 55px;
+    }
       
