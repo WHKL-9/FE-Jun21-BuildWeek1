@@ -5,6 +5,9 @@
     min-height: 100vh;
 }
 
+.mainContainer{
+  max-width: 100vw;
+}
 
 li a{
     color: lightgray;
