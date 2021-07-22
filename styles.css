@@ -725,6 +725,36 @@ progress {
       display: inline;
     }
 
+    /* #image-align{
+      position: relative;
+    } */
+
+    #image-align img{
+      position: relative !important;
+      left:0;
+      bottom: 10px;
+      object-fit: cover;
+      max-width: 100% !important;
+      max-height: 100% !important;
+    }
+
+    .albumTextContainer{
+      position: relative;
+    }
+
+    .display-7{
+      position: absolute;
+      left: 1.5rem;
+      bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      /* align-items: center;
+    }
+
+
+
+
       /* css for artist page  */
       #artistTable {
         /* position: absolute;
