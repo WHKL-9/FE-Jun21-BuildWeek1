@@ -180,6 +180,15 @@ h4 {
 }
 
 #imageSize {
+
+    width: 65px !important;
+    height: 65px !important;
+}
+
+#fontSize {
+    font-size: 11px !important;
+    position: absolute;
+    top: 26px !important;
   width: 50px !important;
   height: 50px !important;
 }
@@ -911,6 +920,50 @@ a:hover {
   -moz-animation: spin 1s linear;
   animation: spin 1s linear;
 }
+
+
+    #artistTable{
+      position: absolute;
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    /* Sara's extra feature */
+
+    #cardHover:hover {
+        background-color: rgba(73, 73, 73, 0.7) !important;
+      }
+
+      .playHover {
+          font-size: 40px;
+          position: absolute;
+          left: 159px;
+          bottom: 12px;
+          visibility: hidden;
+          color: #55BA55;
+          background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(85,186,85,1) 70%);
+          border-radius: 50%;
+      }
+
+      .playHover2 {
+        font-size: 30px;
+        position: absolute;
+        left: 111px;
+        bottom: 12px;
+        visibility: hidden;
+        color: #55BA55;
+        background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(85,186,85,1) 70%);
+        border-radius: 50%;
+    }
+
+      #cardHover:hover .playHover {
+        visibility: visible;
+        body: linear-gradient(180deg, rgb(28, 4, 83) 0%, rgb(0, 0, 0) 35%) !important;
+      }
+
+      #cardHover:hover .playHover2 {
+        visibility: visible;
+    }
 
 @-webkit-keyframes spin {
   100% {
