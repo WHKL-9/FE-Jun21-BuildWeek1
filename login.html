@@ -310,13 +310,13 @@
                 <!-- email address and password-->
                 <div class="emailAndPassword mt-2">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email address or username" aria-label="Recipient's username"
+                        <input type="text" class="form-control" id="email" placeholder="Email address or username" aria-label="Recipient's username"
                         aria-describedby="basic-addon2">
                     </div>
                     <!-- deal with the lock icon later -->
                     <!-- <i class="fas fa-lock"></i> -->
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="password" class="form-control" id="password" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
                 </div>
                 <!-- remember me check box and spotify login -->
@@ -330,7 +330,7 @@
                         </div>
                     </div>
                     <div class="login text-right">
-                        <button type="button" class="btn loginButton text-white">Login</button>
+                        <button type="button" class="btn loginButton text-white"onclick="authenticate()" >Login</button>
                     </div>
                 </div>
                 <!-- forgot your password -->
@@ -365,7 +365,33 @@
             </div>
         </div>
 
-        
+        <script>
+             function authenticate(){
+                 let x = document.getElementById('email').value;
+                //  let y = ValidateEmail(x);
+                 if(true==true){
+                     let p= document.getElementById('password').value;
+                     if(x=='spotify@example.com'&& p=='mypassword'){
+                          window.location.replace('index.html');
+                     }else{
+                         window.alert('enter valid email or password')
+                     }
+                 }else{
+                      window.alert('enter valid email')
+                 }
+
+                  
+             }
+//              function ValidateEmail(mail) 
+// {
+//  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value))
+//   {
+//     return (true)
+//   }
+   
+//     return (false)
+// }
+        </script>
     <script src="./login_files/ceb4b94ff8.js.download" crossorigin="anonymous"></script>
 
     <script src="./login_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
