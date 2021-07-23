@@ -179,14 +179,14 @@ h4 {
 }
 
 #imageSize {
-    width: 65px !important;
-    height: 65px !important;
+  width: 65px !important;
+  height: 65px !important;
 }
 
 #fontSize {
-    font-size: 11px !important;
-    position: absolute;
-    top: 26px !important;
+  font-size: 11px !important;
+  position: absolute;
+  top: 26px !important;
 }
 
 /* div h5 {
@@ -594,7 +594,7 @@ progress {
   bottom: 6.1rem;
 }
 
-.logo{
+.logo {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -603,25 +603,28 @@ progress {
 
 /* Album page CSS */
 
-.previous, .next{
+.previous,
+.next {
   opacity: 0.7;
 }
 
-#displaylyrics{
+#displaylyrics {
   margin-top: 0;
-  padding-top:0;
+  padding-top: 0;
 }
 
-#album-body{
+#album-body {
   background-color: transparent !important;
 }
 
 #hero-container {
   background: rgb(19, 19, 19);
+  background: rgb(184, 67, 152);
   background: linear-gradient(
-    0deg,
-    rgba(19, 19, 19, 1) 0%,
-    rgba(149, 52, 121, 1) 93%
+    180deg,
+    rgba(184, 67, 152, 1) 6%,
+    rgba(158, 55, 129, 1) 50%,
+    rgba(55, 23, 45, 1) 83%
   );
   color: white;
 }
@@ -684,11 +687,14 @@ a:hover {
   display: inline;
 }
 #table-section > div {
-  background-color: #391832;
+  background-color: #21151f;
 }
 
 .bi {
   padding-left: 15px;
+}
+.bi-stopwatch {
+  padding-left: 0;
 }
 
 #table-section {
@@ -812,7 +818,6 @@ a:hover {
   justify-content: flex-start;
 }
 
-
 /* align-items: center;
     
      
@@ -929,52 +934,60 @@ a:hover {
   animation: spin 1s linear;
 }
 
-    #artistTable{
-      position: absolute;
-      top: 3rem;
-      left: 1.5rem;
-    }
+#artistTable {
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+}
 
-    /* Sara's extra feature */
+/* Sara's extra feature */
 
-    #cardHover:hover {
-        background-color: rgba(73, 73, 73, 0.7) !important;
-      }
+#cardHover:hover {
+  background-color: rgba(73, 73, 73, 0.7) !important;
+}
 
-      .bodyHover {
-        position: relative;
-      }
+.bodyHover {
+  position: relative;
+}
 
-      .playHover {
-          font-size: 40px;
-          position: absolute;
-          right: 10px;
-          bottom: 0px;
-          visibility: hidden;
-          color: #55BA55;
-          background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(85,186,85,1) 70%);
-          border-radius: 50%;
-      }
+.playHover {
+  font-size: 40px;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  visibility: hidden;
+  color: #55ba55;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(85, 186, 85, 1) 70%
+  );
+  border-radius: 50%;
+}
 
-      .playHover2 {
-        font-size: 30px;
-        position: absolute;
-        left: 111px;
-        bottom: 12px;
-        visibility: hidden;
-        color: #55BA55;
-        background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(85,186,85,1) 70%);
-        border-radius: 50%;
-    }
+.playHover2 {
+  font-size: 30px;
+  position: absolute;
+  left: 111px;
+  bottom: 12px;
+  visibility: hidden;
+  color: #55ba55;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(85, 186, 85, 1) 70%
+  );
+  border-radius: 50%;
+}
 
-      #cardHover:hover .playHover {
-        visibility: visible;
-        body: linear-gradient(180deg, rgb(28, 4, 83) 0%, rgb(0, 0, 0) 35%) !important;
-      }
+#cardHover:hover .playHover {
+  visibility: visible;
+  body: linear-gradient(180deg, rgb(28, 4, 83) 0%, rgb(0, 0, 0) 35%) !important;
+}
 
-      #cardHover:hover .playHover2 {
-        visibility: visible;
-    }
+#cardHover:hover .playHover2 {
+  visibility: visible;
+}
 
 @-webkit-keyframes spin {
   100% {
@@ -1013,4 +1026,28 @@ td:hover {
   opacity: 0;
   transition: opacity  1s;
 } */
+.fa-heart {
+  margin-bottom: 40px;
+  transform: scale(1.2);
+}
+.leftFooter {
+  position: relative;
+}
+.leftFooter #fullscreen {
+  position: absolute;
+  right: -15px;
+  bottom: 22px;
+}
 
+#fullscreen i {
+  background-color: transparent !important;
+  color: white !important;
+  /* position: relative; */
+  /* top: 10px;
+  right: 60px; */
+}
+#fullscreenbutton {
+  background-color: transparent !important;
+  border: 0;
+  transform: scale(1.2);
+}
