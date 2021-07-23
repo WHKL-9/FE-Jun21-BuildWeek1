@@ -169,7 +169,6 @@ body {
 /* .hero-section-borderless{
   position: relative;
 }
-
 .hero-section-borderless .container-fluid{
   position: absolute;
   left:0;
@@ -180,12 +179,14 @@ h4 {
 }
 
 #imageSize {
-  width: 50px !important;
-  height: 50px !important;
+    width: 65px !important;
+    height: 65px !important;
 }
 
 #fontSize {
-  font-size: 11px !important;
+    font-size: 11px !important;
+    position: absolute;
+    top: 26px !important;
 }
 
 /* div h5 {
@@ -296,7 +297,6 @@ h4 {
     background: white!important;
     border-radius: 50px;
   }
-
   
   #songName {
     position: absolute;
@@ -313,18 +313,15 @@ h4 {
   }
   
   
-
   #aviciiSize {
       width: 50px;
       height: 50px;
   }
-
   #cardMargin {
       margin-bottom: 75px;
   }
   
  
-
   #forwardInFooter{
     border-radius: 50%;
     background-color: transparent !important;
@@ -597,7 +594,28 @@ progress {
   bottom: 6.1rem;
 }
 
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 /* Album page CSS */
+
+.previous, .next{
+  opacity: 0.7;
+}
+
+#displaylyrics{
+  margin-top: 0;
+  padding-top:0;
+}
+
+#album-body{
+  background-color: transparent !important;
+}
+
 #hero-container {
   background: rgb(19, 19, 19);
   background: linear-gradient(
@@ -714,7 +732,7 @@ a:hover {
 #scroll-container {
   border: 1px solid black;
   border-radius: 2px;
-  height: 900px;
+  height: 800px;
   overflow: hidden;
   background-image: url(./Asset/avici.jpeg);
   background-repeat: no-repeat;
@@ -788,17 +806,16 @@ a:hover {
 .display-7 {
   position: absolute;
   left: 1.5rem;
-  bottom: 5rem;
+  bottom: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
+
 /* align-items: center;
     
      
-
-
-
       /* css for artist page  */
 #artistTable {
   /* position: absolute;
@@ -912,6 +929,53 @@ a:hover {
   animation: spin 1s linear;
 }
 
+    #artistTable{
+      position: absolute;
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    /* Sara's extra feature */
+
+    #cardHover:hover {
+        background-color: rgba(73, 73, 73, 0.7) !important;
+      }
+
+      .bodyHover {
+        position: relative;
+      }
+
+      .playHover {
+          font-size: 40px;
+          position: absolute;
+          right: 10px;
+          bottom: 0px;
+          visibility: hidden;
+          color: #55BA55;
+          background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(85,186,85,1) 70%);
+          border-radius: 50%;
+      }
+
+      .playHover2 {
+        font-size: 30px;
+        position: absolute;
+        left: 111px;
+        bottom: 12px;
+        visibility: hidden;
+        color: #55BA55;
+        background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(85,186,85,1) 70%);
+        border-radius: 50%;
+    }
+
+      #cardHover:hover .playHover {
+        visibility: visible;
+        body: linear-gradient(180deg, rgb(28, 4, 83) 0%, rgb(0, 0, 0) 35%) !important;
+      }
+
+      #cardHover:hover .playHover2 {
+        visibility: visible;
+    }
+
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(45deg);
@@ -943,3 +1007,10 @@ td:hover {
   -webkit-transform: scale(1.6);
   -ms-transform: scale(1.6);
 }
+
+/* hovering effect - change background */
+/* .out {
+  opacity: 0;
+  transition: opacity  1s;
+} */
+

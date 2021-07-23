@@ -33,122 +33,148 @@
     <title>Spotify-Album</title>
   </head>
 
-  <body>
+  <body class="album-body">
     <div class="container-fluid mainContainer">
       <div class="row">
         <div class="col-2 sideNavBar pt-2 d-none d-sm-none d-md-block">
-          <!-- side nav bar  -->
-          <div class="logo">
-            <h4 class="text-white">
-              <img
-                src="./Asset/spotify (2).png"
-                alt="Spotify Logo"
-                class="img-fluid"
-              />
-              Spotify
-            </h4>
-          </div>
-          <div class="mainMenu mb-4 no-gutters">
-            <ul class="nav flex-column">
-              <!-- spotify icon not working - problem with font awesome -->
-              <!-- <i class="fab fa-spotify"></i> -->
-              <!-- home icon and text -->
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <i class="fas fa-home"></i>
-                  Home
-                </a>
-              </li>
-              <!-- search icon and text -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-search"></i>
-                  Search
-                </a>
-              </li>
-              <!-- library icon and text -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-stream"></i>
-                  Your Library
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="secondaryMenu no-gutters mb-4">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link plusSign" href="#">
-                  <i class="far fa-plus-square mr-1"></i>
-                  Create Playlist
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img
-                    src="https://misc.scdn.co/liked-songs/liked-songs-300.png"
-                    class="likedSong mr-1"
-                    alt="liked song icon"
-                  />
-                  Liked Songs
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="tertiaryMenu no-gutters">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Funky Heavy Bluesy </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Your Top Songs 2020 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> In Love With you - Erykah </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> This is Post Malone </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> This is Imagine Dragons </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> This is Avicii </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> New Playlist </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Dinner With Friends </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Medidtation </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Winter Loneliness </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Summer Hits </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> YOLO </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Morning Coffee </a>
-              </li>
-            </ul>
-          </div>
-          <div class="InstallApp">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-arrow-circle-down"></i>
-                  Install App
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+           <!-- side nav bar  -->
+                    <div class="logo ml-1">
+                        <h4 class="text-white">
+                            <img src="./Asset/spotify (2).png" alt="Spotify Logo" class="img-fluid">
+                            Spotify
+                        </h4>
+
+                    </div>
+                    <div class="mainMenu mb-4 no-gutters">
+                        <ul class="nav flex-column">
+                            <!-- spotify icon not working - problem with font awesome -->
+                            <!-- <i class="fab fa-spotify"></i> -->
+                            <!-- home icon and text -->
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">
+                                  <i class="fas fa-home"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                              <a  class="nav-link active" href="artist.html"><i class="fas fa-microphone-alt"></i> Artist</a>
+                                  
+                            </li>
+                            <!-- search icon and text -->
+                            <li class="nav-item">
+                                
+                                <a class="nav-link" href="#">
+                                  <i class="fas fa-search"></i>
+                                    Search
+                                </a>
+                            </li>
+                            <!-- library icon and text -->
+                            <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <i class="fas fa-stream"></i>
+                                    Your Library
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="secondaryMenu no-gutters mb-4">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link plusSign" href="#">
+                                  <i class="far fa-plus-square mr-1"></i>
+                                    Create Playlist
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                      <img src="https://misc.scdn.co/liked-songs/liked-songs-300.png"
+                                      class="likedSong mr-1"
+                                      alt="liked song icon">
+                                    Liked Songs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tertiaryMenu no-gutters">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Funky Heavy Bluesy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Your Top Songs 2020
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    In Love With you - Erykah
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    This is Post Malone
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    This is Imagine Dragons
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    This is Avicii
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    New Playlist
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Dinner With Friends
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Meditation
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  Winter Loneliness
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Summer Hits 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              YOLO
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Morning Coffee
+                        </a>
+                    </li>
+                        </ul>
+                    </div>
+                    <div class="InstallApp">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">
+                            <i class="fas fa-arrow-circle-down"></i>
+                            Install App
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+            </div>
         <div class="col-10 px-0" id="displaylyrics">
           <div id="scroll-container">
             <div id="scroll-text">
@@ -240,7 +266,7 @@
           </div>
         </div>
         <div class="col-10 px-0" id="sarada">
-          <div class="pr-3 mt-3 container-fluid">
+          <div class="px-0 container-fluid">
             <!-- <album> -->
             <section id="album-section">
               <div class="container-fluid" id="hero-container">
@@ -286,9 +312,7 @@
                       <button class="dropdown-item text-white" type="button">
                         Update Spotify now
                       </button>
-                      <button class="dropdown-item text-white" type="button">
-                        Log out
-                      </button>
+                     <button onclick="location.href='login.html'" class="dropdown-item text-white" type="button">Log out</button>
                     </div>
                   </div>
                 </div>
@@ -301,10 +325,9 @@
                   >
                     <p class="display-7 d-none d-sm-none d-md-flex">
                       <small>ALBUM</small>
-                      <strong>Bohemian Rhapsody(The Orignal Soundtrack)</strong>
-                      <small style="font-size: 20px"
-                        ><strong>Queen</strong>.2018.22songs.1hr19mins.</small
-                      >
+                      <strong style="font-size: 25px">Bohemian Rhapsody(The Original Soundtrack)</strong>
+                      <small style="font-size: 15px"
+                        ><strong>Queen &#8226</strong> 2018 &#8226; 22 songs, 1 hr 19mins</small>
                     </p>
                   </div>
                 </div>
@@ -355,7 +378,7 @@
                   <thead>
                     <tr>
                       <th scope="col" style="width: 5%">#</th>
-                      <th scope="col" colspan="2">First</th>
+                      <th scope="col" colspan="2">TITLE</th>
                       <th scope="col">
                         <i class="bi bi-stopwatch"></i
                         ><svg
@@ -379,47 +402,47 @@
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
-                      <td colspan="2">20th century fox firm fare</td>
-                      <td>4mins</td>
+                      <td colspan="2">20th Century Fox Firm Fare</td>
+                      <td>0:25</td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
-                      <td colspan="2">somebody to love</td>
-                      <td>4mins</td>
+                      <td colspan="2">Somebody To Love</td>
+                      <td>4:55</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
-                      <td colspan="2">Doing all right revisited</td>
-                      <td>4mins</td>
+                      <td colspan="2">Doing All Right - ...Revisited</td>
+                      <td>3:16</td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
-                      <td colspan="2">Keep yourself alive-live at rianbow</td>
-                      <td>4mins</td>
+                      <td colspan="2">Keep Yourself Alive - Live At The Rainbow</td>
+                      <td>3:56</td>
                     </tr>
                     <tr>
                       <th scope="row">5</th>
-                      <td colspan="2">killer Queen</td>
-                      <td>4mins</td>
+                      <td colspan="2">Killer Queen</td>
+                      <td>2:59</td>
                     </tr>
                     <tr>
                       <th scope="row">6</th>
-                      <td colspan="2">Fat bottomed girls -live in paris</td>
-                      <td>4mins</td>
+                      <td colspan="2">Fat Bottomed Birls - Live In Paris</td>
+                      <td>4:37</td>
                     </tr>
                     <tr>
                       <th scope="row">7</th>
-                      <td colspan="2">Bhoeiman Rhapsody</td>
-                      <td>4mins</td>
+                      <td colspan="2">Bohemian Rhapsody</td>
+                      <td>5:54</td>
                     </tr>
                     <tr>
                       <th scope="row">8</th>
-                      <td colspan="2">Now im here</td>
-                      <td>2mins</td>
+                      <td colspan="2">Now I'm Here - Live At The Hammersmith Odeon</td>
+                      <td>2:43</td>
                     </tr>
                     <tr>
                       <th scope="row">9</th>
-                      <td colspan="2">Crazy little thing called love</td>
+                      <td colspan="2">Crazy Little Thing Called Love</td>
                       <td>4mins</td>
                     </tr>
                   </tbody>
